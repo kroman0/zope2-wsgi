@@ -1,7 +1,5 @@
 bin
+etc
 parts
-etc/who.ini
-etc/zope.conf
-etc/zope.ini
 src
 var
