@@ -6,8 +6,8 @@ Bootstrap
 
 First you need to bootstrap::
 
-  python2.6 bootstrap.py -d
-  bin/buildout
+  python2.6 bootstrap.py -dc development.cfg
+  bin/buildout c development.cfg
 
 Run
 ---
