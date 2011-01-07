@@ -1,5 +1,6 @@
 bin
-etc/passwd
+etc/apache.conf
+etc/supervisord.conf
 etc/who.ini
 etc/zope.conf
 etc/zope.ini
