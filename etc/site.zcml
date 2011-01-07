@@ -15,6 +15,6 @@
   <!-- <include package="my.package" file="overrides.zcml" /> -->
   <five:loadProductsOverrides />
 
-  <securityPolicy component="Products.Five.security.FiveSecurityPolicy" />
+  <securityPolicy component="AccessControl.security.SecurityPolicy" />
 
 </configure>
