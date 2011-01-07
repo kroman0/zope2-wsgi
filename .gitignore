@@ -4,5 +4,5 @@ etc/who.ini
 etc/zope.conf
 etc/zope.ini
 parts
-src
+src/Zope2
 var

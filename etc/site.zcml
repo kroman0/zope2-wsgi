@@ -6,13 +6,13 @@
   <include package="Products.Five" />
   <meta:redefinePermission from="zope2.Public" to="zope.Public" />
 
-  <!-- <include package="my.package" file="meta.zcml" /> -->
+  <include package="policy" file="meta.zcml" />
   <five:loadProducts file="meta.zcml"/>
 
-  <!-- <include package="my.package" /> -->
+  <include package="policy" />
   <five:loadProducts />
 
-  <!-- <include package="my.package" file="overrides.zcml" /> -->
+  <include package="policy" file="overrides.zcml" />
   <five:loadProductsOverrides />
 
   <securityPolicy component="AccessControl.security.SecurityPolicy" />
