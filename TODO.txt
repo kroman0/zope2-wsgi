@@ -1,0 +1,32 @@
+Todo
+====
+
+Local Apache install via Macports in::
+
+  cd /opt/local/apache2
+
+Start/Stop Apache via::
+
+  sudo bin/apachectl -k start
+  sudo bin/apachectl -k stop
+
+Watch errors via::
+
+  tail -n 20 -f logs/error_log
+
+Currently this gives::
+
+  [error] mod_wsgi (pid=92688): Unable to import 'site' module.
+
+The config is included via `conf/httpd.conf`::
+
+  LoadModule wsgi_module modules/mod_wsgi.so
+  Include /opt/zope/zope2-wsgi/etc/apache.conf
+
+The likely culprit is in the `[apache_conf]` section::
+
+  # XXX hardcoded path
+  python-path = /opt/python/python-2.6/lib/python2.6/site-packages
+
+More information available in the mod_wsgi docs:
+http://code.google.com/p/modwsgi/wiki/VirtualEnvironments
