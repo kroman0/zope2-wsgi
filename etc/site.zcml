@@ -5,7 +5,10 @@
 
   <include package="Products.Five" />
   <meta:redefinePermission from="zope2.Public" to="zope.Public" />
-
+  <include package="Products.CMFPlone"  file="meta.zcml" />
+  <include package="Products.CMFPlone" />
+  <five:loadProducts />
+<!--
   <include package="policy" file="meta.zcml" />
   <five:loadProducts file="meta.zcml"/>
 
@@ -14,7 +17,7 @@
 
   <include package="policy" file="overrides.zcml" />
   <five:loadProductsOverrides />
-
+-->
   <securityPolicy component="AccessControl.security.SecurityPolicy" />
 
 </configure>
